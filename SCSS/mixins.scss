@@ -1,0 +1,13 @@
+@mixin clearFix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin mQ($args) {
+    @media screen and (min-width:$args) {
+        @content;
+    }
+}
